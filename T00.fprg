@@ -4,9 +4,9 @@
         <attribute name="name" value="T001"/>
         <attribute name="authors" value="LENOVO"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 09:32:52 AM"/>
+        <attribute name="saved" value="2025-10-03 02:05:52 PM"/>
         <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1FOUJVTEIwSzsyMDI1LTEwLTAxOzA4OjI2OjEwIFBNOzI3OTA="/>
-        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1FOUJVTEIwSzsyMDI1LTEwLTAzOzA5OjMyOjUyIEFNOzM7Mjg5MQ=="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1FOUJVTEIwSzsyMDI1LTEwLTAzOzAyOjA1OjUyIFBNOzQ7MjkwMA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,31 +16,31 @@
             <input variable="y"/>
             <if expression="x%2=0">
                 <then>
-                    <output expression="&quot;bilangan pertama genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;bilangan pertama ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="y%2=0">
                 <then>
-                    <output expression="&quot;bilangan kedua genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;bilangan kedua ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="x=y">
                 <then>
-                    <output expression="&quot;kedua bilangan sama besar&quot;" newline="True"/>
+                    <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
                 </then>
                 <else>
                     <if expression="x&lt;y">
                         <then>
-                            <output expression="&quot;bilangan kedua lebih besar&quot;" newline="True"/>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;bilangan kedua lebih kecil&quot;" newline="True"/>
+                            <output expression="&quot;Bilangan kedua lebih kecil&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
@@ -48,23 +48,23 @@
             <if expression="x%2=0 and y%2=0">
                 <then>
                     <assign variable="q" expression="x+y"/>
-                    <output expression="q" newline="True"/>
+                    <output expression="&quot;Hasil penjumlahan = &quot; &amp;q" newline="True"/>
                 </then>
                 <else>
                     <if expression="x%2!=0 and y%2!=0">
                         <then>
                             <assign variable="r" expression="x*y"/>
-                            <output expression="r" newline="True"/>
+                            <output expression="&quot;Hasil perkalian = &quot; &amp;r" newline="True"/>
                         </then>
                         <else>
                             <if expression="x%2=0 and y%2!=0">
                                 <then>
-                                    <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                                 </then>
                                 <else>
                                     <if expression="x%2!=0 and y%2=0">
                                         <then>
-                                            <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                                         </then>
                                         <else/>
                                     </if>
