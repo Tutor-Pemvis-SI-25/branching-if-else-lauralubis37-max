@@ -7,7 +7,7 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int x, y, q, r;
+        int x, y, tambah, kali;
 
         x = Integer.parseInt(input.nextLine());
         y = Integer.parseInt(input.nextLine());
@@ -21,30 +21,28 @@ public class T00 {
         } else {
             System.out.println("Bilangan kedua: Ganjil");
         }
-        if (x == y) {
-            System.out.println("Kedua bilangan sama besar");
+        if (x > y) {
+            System.out.println("Bilangan pertama lebih besar");
         } else {
             if (x < y) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println("Bilangan kedua lebih kecil");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (x % 2 == 0 && y % 2 == 0) {
-            q = x + y;
-            System.out.println("Hasil penjumlahan: " + q);
-        } else {
-            if (x % 2 != 0 && y % 2 != 0) {
-                r = x * y;
-                System.out.println("Hasil perkalian: " + r);
+        if (x % 2 == 0) {
+            if (x % 2 == 0) {
+                tambah = x + y;
+                System.out.println("Hasil penjumlahan: " + tambah);
             } else {
-                if (x % 2 == 0 && y % 2 != 0) {
-                    System.out.println("Berbeda jenis");
-                } else {
-                    if (x % 2 != 0 && y % 2 == 0) {
-                        System.out.println("Berbeda jenis");
-                    }
-                }
+                System.out.println("Berbeda jenis");
+            }
+        } else {
+            if (y % 2 != 0) {
+                kali = x * y;
+                System.out.println("Hasil perkalian: " + kali);
+            } else {
+                System.out.println("Berbeda jenis");
             }
         }
     }
