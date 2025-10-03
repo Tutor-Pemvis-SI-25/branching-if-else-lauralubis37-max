@@ -4,9 +4,9 @@
         <attribute name="name" value="T001"/>
         <attribute name="authors" value="LENOVO"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 02:05:52 PM"/>
+        <attribute name="saved" value="2025-10-03 03:31:11 PM"/>
         <attribute name="created" value="TEVOT1ZPO0xBUFRPUC1FOUJVTEIwSzsyMDI1LTEwLTAxOzA4OjI2OjEwIFBNOzI3OTA="/>
-        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1FOUJVTEIwSzsyMDI1LTEwLTAzOzAyOjA1OjUyIFBNOzQ7MjkwMA=="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC1FOUJVTEIwSzsyMDI1LTEwLTAzOzAzOjMxOjExIFBNOzU7Mjg5Ng=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,18 +16,18 @@
             <input variable="y"/>
             <if expression="x%2=0">
                 <then>
-                    <output expression="&quot;Bilangan pertama genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="y%2=0">
                 <then>
-                    <output expression="&quot;Bilangan kedua genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="x=y">
@@ -48,13 +48,13 @@
             <if expression="x%2=0 and y%2=0">
                 <then>
                     <assign variable="q" expression="x+y"/>
-                    <output expression="&quot;Hasil penjumlahan = &quot; &amp;q" newline="True"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp;q" newline="True"/>
                 </then>
                 <else>
                     <if expression="x%2!=0 and y%2!=0">
                         <then>
                             <assign variable="r" expression="x*y"/>
-                            <output expression="&quot;Hasil perkalian = &quot; &amp;r" newline="True"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp;r" newline="True"/>
                         </then>
                         <else>
                             <if expression="x%2=0 and y%2!=0">

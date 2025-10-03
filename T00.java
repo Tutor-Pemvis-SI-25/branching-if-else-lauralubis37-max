@@ -14,7 +14,7 @@ public class T00 {
         if (x % 2 == 0) {
             System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.print("Bilangan pertama: Ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (y % 2 == 0) {
             System.out.println("Bilangan kedua: Genap");
