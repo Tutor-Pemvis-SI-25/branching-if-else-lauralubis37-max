@@ -7,7 +7,7 @@ public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int x, y, tambah, kali;
+        int x, y, q, r;
 
         x = Integer.parseInt(input.nextLine());
         y = Integer.parseInt(input.nextLine());
@@ -21,28 +21,34 @@ public class T00 {
         } else {
             System.out.println("Bilangan kedua: Ganjil");
         }
-        if (x > y) {
-            System.out.println("Bilangan pertama lebih besar");
+        if (x == y) {
+            System.out.println("Kedua bilangan sama besar");
         } else {
-            if (x < y) {
-                System.out.println("Bilangan kedua lebih besar");
+            if (x > y) {
+                System.out.println("Bilangan pertama lebih besar");
             } else {
-                System.out.println("Kedua bilangan sama besar");
+                if (x < y) {
+                    System.out.println("Bilangan kedua lebih besar");
+                } else {
+                    System.out.println("Bilangan kedua lebih kecil");
+                }
             }
         }
-        if (x % 2 == 0) {
-            if (x % 2 == 0) {
-                tambah = x + y;
-                System.out.println("Hasil penjumlahan: " + tambah);
-            } else {
-                System.out.println("Berbeda jenis");
-            }
+        if (x % 2 == 0 && y % 2 == 0) {
+            q = x + y;
+            System.out.println("Hasil penjumlahan: " + q);
         } else {
-            if (y % 2 != 0) {
-                kali = x * y;
-                System.out.println("Hasil perkalian: " + kali);
+            if (x % 2 != 0 && y % 2 != 0) {
+                r = x * y;
+                System.out.println("Hasil perkalian: " + r);
             } else {
-                System.out.println("Berbeda jenis");
+                if (x % 2 == 0 && y % 2 != 0) {
+                    System.out.println("Berbeda jenis");
+                } else {
+                    if (x % 2 != 0 && y % 2 == 0) {
+                        System.out.println("Berbeda jenis");
+                    }
+                }
             }
         }
     }
